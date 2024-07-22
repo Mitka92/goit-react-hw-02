@@ -8,15 +8,15 @@ import Notification from './components/Notification/Notification';
 
 function App() {
   const [feedback, setFeedback] = useState(() => {
-    const savedObject = window.localStorage.getItem('saved-feedbacks');
-    if (savedObject !== null) {
-      return JSON.parse(savedObject);
+    const savedFeedback = window.localStorage.getItem('saved-feedback');
+    if (savedFeedback !== null) {
+      return JSON.parse(savedFeedback);
     }
     return { good: 0, neutral: 0, bad: 0 };
   });
 
   useEffect(() => {
-    window.localStorage.setItem('saved-feedbacks', JSON.stringify(feedback));
+    window.localStorage.setItem('saved-feedback', JSON.stringify(feedback));
   }, [feedback]);
 
   const totalFeedback =
@@ -40,17 +40,19 @@ function App() {
   return (
     <>
       <Section>
-        <Description />
-        <Options
-          callback={updateFeedback}
-          totalFeedback={totalFeedback}
-          reset={resetFeedback}
-        />
-        {!totalFeedback ? (
-          <Notification />
-        ) : (
-          <Feedback obj={feedback} totalFeedback={totalFeedback} />
-        )}
+        <div className="feedback">
+          <Description />
+          <Options
+            callback={updateFeedback}
+            totalFeedback={totalFeedback}
+            reset={resetFeedback}
+          />
+          {!totalFeedback ? (
+            <Notification />
+          ) : (
+            <Feedback feedback={feedback} totalFeedback={totalFeedback} />
+          )}
+        </div>
       </Section>
     </>
   );

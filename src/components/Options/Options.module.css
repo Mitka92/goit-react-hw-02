@@ -1,0 +1,12 @@
+.options-box {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+@media (max-width: 500px) {
+  .options-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}

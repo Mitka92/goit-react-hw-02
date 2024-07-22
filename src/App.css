@@ -1,3 +1,10 @@
 #root {
   margin: 0 auto;
 }
+.feedback {
+  border: 2px solid black;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

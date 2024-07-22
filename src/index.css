@@ -87,6 +87,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.title {
-  text-align: center;
+body {
+  background-color: rgba(64, 169, 217, 0.1);
+  font-family: 'Montserrat';
 }

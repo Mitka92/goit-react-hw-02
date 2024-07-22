@@ -1,0 +1,53 @@
+.button {
+  width: 240px;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  box-shadow: rgba(60, 60, 60, 0.6) 0 -25px 18px -14px inset,
+    rgba(60, 60, 60, 0.6) 0 1px 2px, rgba(60, 60, 60, 0.6) 0 2px 4px,
+    rgba(60, 60, 60, 0.6) 0 4px 8px, rgba(60, 60, 60, 0.6) 0 8px 16px,
+    rgba(60, 60, 60, 0.6) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.button.good {
+  background-color: #a5e9be;
+  box-shadow: rgba(60, 60, 60, 0.408) 0 -25px 18px -14px inset,
+    rgba(60, 60, 60, 0.408) 0 1px 2px, rgba(60, 60, 60, 0.408) 0 2px 4px,
+    rgba(60, 60, 60, 0.408) 0 4px 8px, rgba(60, 60, 60, 0.408) 0 8px 16px,
+    rgba(60, 60, 60, 0.408) 0 16px 32px;
+}
+
+.button.neutral {
+  background-color: #eae16a;
+  box-shadow: rgba(60, 60, 60, 0.408) 0 -25px 18px -14px inset,
+    rgba(60, 60, 60, 0.408) 0 1px 2px, rgba(60, 60, 60, 0.408) 0 2px 4px,
+    rgba(60, 60, 60, 0.408) 0 4px 8px, rgba(60, 60, 60, 0.408) 0 8px 16px,
+    rgba(60, 60, 60, 0.408) 0 16px 32px;
+}
+.button.bad {
+  background-color: rgb(198, 54, 54);
+  box-shadow: rgba(60, 60, 60, 0.408) 0 -25px 18px -14px inset,
+    rgba(60, 60, 60, 0.408) 0 1px 2px, rgba(60, 60, 60, 0.408) 0 2px 4px,
+    rgba(60, 60, 60, 0.408) 0 4px 8px, rgba(60, 60, 60, 0.408) 0 8px 16px,
+    rgba(60, 60, 60, 0.408) 0 16px 32px;
+}
+.button.reset {
+  background-color: gray;
+  box-shadow: rgba(60, 60, 60, 0.408) 0 -25px 18px -14px inset,
+    rgba(60, 60, 60, 0.408) 0 1px 2px, rgba(60, 60, 60, 0.408) 0 2px 4px,
+    rgba(60, 60, 60, 0.408) 0 4px 8px, rgba(60, 60, 60, 0.408) 0 8px 16px,
+    rgba(60, 60, 60, 0.408) 0 16px 32px;
+}
