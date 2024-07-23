@@ -18,10 +18,13 @@
   font-size: 16px;
   cursor: default;
 }
-
+.reset-active {
+  margin-top: 60px;
+}
 .feedback-text {
   font-size: 14px;
 }
+
 @media (max-width: 768px) {
   .feedback-list {
     flex-direction: column;

@@ -3,7 +3,9 @@
   gap: 10px;
   justify-content: center;
   margin-top: 20px;
+  position: relative;
 }
+
 @media (max-width: 500px) {
   .options-box {
     flex-direction: column;
