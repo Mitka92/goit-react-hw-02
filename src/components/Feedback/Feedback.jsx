@@ -1,9 +1,9 @@
 import clsx from 'clsx';
 import css from './Feedback.module.css';
 
-function Feedback({ feedback, totalFeedback }) {
+function Feedback({ feedback, totalFeedback, positiveFeedback }) {
   const { good, neutral, bad } = feedback;
-  const positive = Math.round((good / totalFeedback) * 100);
+
   return (
     <ul
       className={clsx(css['feedback-list'], {
@@ -25,10 +25,12 @@ function Feedback({ feedback, totalFeedback }) {
       <li
         className={clsx(css['feedback-item'])}
         style={{
-          background: `linear-gradient(to right, rgba(0, 122, 90, 0.85) ${positive}%, rgba(184, 41, 22, 0.85) ${positive}%)`,
+          background: `linear-gradient(to right, rgba(0, 122, 90, 0.85) ${positiveFeedback}%, rgba(184, 41, 22, 0.85) ${positiveFeedback}%)`,
         }}
       >
-        <p className={clsx(css['feedback-text'])}>Positive: {positive}%</p>
+        <p className={clsx(css['feedback-text'])}>
+          Positive: {positiveFeedback}%
+        </p>
       </li>
     </ul>
   );
